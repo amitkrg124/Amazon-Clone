@@ -30,7 +30,7 @@ function ProductPage() {
       setError(_error);
     }
     setLoading(false);
-  }, [loading]);
+  }, [loading,product,productId]);
 
   useEffect(() => {
     loadProduct();
